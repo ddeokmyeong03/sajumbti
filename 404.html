@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      // GitHub Pages SPA 리다이렉트
+      const path = window.location.pathname.replace('/sajumbti', '')
+      const search = window.location.search
+      const hash = window.location.hash
+      window.location.replace(
+        '/sajumbti/?p=' + encodeURIComponent(path + search + hash)
+      )
+    </script>
+  </head>
+  <body></body>
+</html>
